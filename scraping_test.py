@@ -1,9 +1,10 @@
 import requests
+from api_key import apikey
 import time
 import csv
 
 # set the Napster API key
-api_key = "YmZiMDI1YmMtNjhiOC00ZTRlLTgwNzktMGVmODU4MzY5M2M4"
+api_key = apikey
 
 # set the base URL for the Napster API
 base_url = "https://api.napster.com/v2.2"
@@ -148,7 +149,7 @@ class GenreScraper:
 if __name__ == "__main__":
     scraper = GenreScraper(api_key, base_url)
 
-    #scraper.process_genres() # comenta si no quires procesar los generos
+    scraper.process_genres() # comenta si no quires procesar los generos
     #scraper.process_top_artists() # comenta si no quires procesar los artistas
     #scraper.process_albums()
-    scraper.process_songs_per_album()
+    #scraper.process_songs_per_album()
