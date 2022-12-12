@@ -106,7 +106,7 @@ class GenreScraper:
         return songs_by_albums
 
 
-    #API REST FUNCTIONS
+    #API REST FUNCTIONS esta son las funciones de la llamada
 
     def call_genres(self):
         genres = self.call_api('genres')
